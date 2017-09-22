@@ -69,7 +69,7 @@ Installing
 **Stable release**
     Via the Python Package Index::
 
-        $> pip install pyunicorn
+        $> pip install https://github.com/wurenzhi/pyunicorn/zipball/master
 
 **Development version**
     For a simple system-wide installation::
