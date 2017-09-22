@@ -420,8 +420,7 @@ Recurrence matrix is not stored in memory."
 
         n_time = time_series.shape[0]
         embedding = np.empty((n_time - (dim - 1) * tau, dim), dtype="float32")
-
-        _embed_time_series(n_time, dim, tau, time_series, embedding)
+        _embed_time_series(n_time, dim, tau, np.squeeze(time_series), embedding)
         return embedding
 
     #
